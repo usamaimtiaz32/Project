@@ -11,7 +11,7 @@
         android:layout_width="100dp"
         android:layout_height="97dp"
         android:layout_margin="10dp"
-        android:background="@drawable/des"
+        android:background="@color/white"
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
         android:scaleType="fitXY"

@@ -1,6 +1,7 @@
 package com.example.bookhotells.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+import com.example.bookhotells.Details;
 import com.example.bookhotells.Modal.TopPlaceData;
 import com.example.bookhotells.R;
 
@@ -39,6 +42,22 @@ public class TopPlaceAdapter extends RecyclerView.Adapter<TopPlaceAdapter.TopPla
         holder.placeName.setText(TopPlacesDataList.get(position).getPlace());
         holder.price.setText(TopPlacesDataList.get(position).getPrice());
         holder.placeImage.setImageResource(TopPlacesDataList.get(position).getImageUrl());
+        Glide.with(context).load(TopPlacesDataList.get(position).getImageUrl()).into(holder.placeImage);
+
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(context, Details.class);
+
+                i.putExtra("Place", TopPlacesDataList.get(position).getPlace());
+
+                i.putExtra("Price", TopPlacesDataList.get(position).getPrice());
+                context.startActivity(i);
+            }
+
+
+        });
     }
 
     @Override
