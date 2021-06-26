@@ -43,14 +43,14 @@ public class Booking extends AppCompatActivity {
 
         Intent intent = getIntent();
         String Cname = intent.getStringExtra("Name");
-        String img = intent.getStringExtra("About");
+
         String Descri = intent.getStringExtra("Description");
 
         //TextView
         TextView mResultTv = findViewById(R.id.resultTv);
 
         //setText
-        mResultTv.setText("Name: "+Cname+"\nAbout: "+img+ "\nDescription: "+Descri);
+        mResultTv.setText("Name: "+Cname+"\nDescription: "+Descri);
 
     }
 }

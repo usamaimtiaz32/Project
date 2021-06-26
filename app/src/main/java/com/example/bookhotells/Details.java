@@ -42,7 +42,6 @@ public class Details extends AppCompatActivity {
 
         //EditText
         final TextView name = findViewById(R.id.CountryName);
-        final ImageView Image = findViewById(R.id.Image);
         final TextView Description = findViewById(R.id.textView9);
         //Button
         Button bt = findViewById(R.id.button);
@@ -53,13 +52,13 @@ public class Details extends AppCompatActivity {
             public void onClick(View view) {
                 //get data from edit text
                 String Cname = name.getText().toString();
-                String img = Image.getImageMatrix().toString();
+
                 String Descri = Description.getText().toString();
 
                 //activity intent
                 Intent intent = new Intent(Details.this, Booking.class);
                 intent.putExtra("Name", Cname);
-                intent.putExtra("About", img);
+
                 intent.putExtra("Description", Descri);
                 startActivity(intent);
 

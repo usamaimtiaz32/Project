@@ -8,18 +8,26 @@
     android:gravity="center"
     android:padding="10dp"
     android:background="@drawable/a1"
-    tools:context=".SignUp">
+    tools:context=".SignUp"
+    >
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+
+        app:srcCompat="@drawable/password" />
     <TextView
         android:id="@+id/logo"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/bangers"
+        android:fontFamily="cursive"
         android:shadowColor="#FFFFFF"
         android:text="Sign UP"
-        android:textColor="@color/logIn"
 
-        android:textSize="50sp" />
+        android:textColor="#F8FAFA"
+        android:textSize="50sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/username"
@@ -58,7 +66,7 @@
 
     <Button
         android:id="@+id/btnsignup"
-        android:layout_width="300dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/repassword"
         android:layout_marginTop="20dp"
@@ -72,9 +80,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Existing user! Go to Sign in page"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:textColor="#090909"
         app:backgroundTint="#00BCD4"
         android:layout_below="@+id/btnsignup"/>
+
+
 
 </LinearLayout>

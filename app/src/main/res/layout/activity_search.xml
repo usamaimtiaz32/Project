@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFEFE"
     tools:context=".Search">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -74,7 +75,8 @@
             android:padding="16dp"
             android:paddingLeft="20dp"
 
-            android:textColorHint="@color/black"
+            android:textColor="#020202"
+            android:textColorHint="#0E0E0E"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="@+id/imageView2"
             app:layout_constraintHorizontal_bias="0.387"

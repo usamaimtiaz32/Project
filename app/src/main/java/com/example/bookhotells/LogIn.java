@@ -39,7 +39,7 @@ public class LogIn extends AppCompatActivity {
                         Intent intent  = new Intent(getApplicationContext(), Search.class);
                         startActivity(intent);
                     }else{
-                        Toast.makeText(LogIn.this, "Invalid Credentials", Toast.LENGTH_LONG).show();
+                        Toast.makeText(LogIn.this, "Invalid UserName OR Password", Toast.LENGTH_LONG).show();
                     }
                 }
             }
