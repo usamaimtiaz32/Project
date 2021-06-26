@@ -20,6 +20,7 @@
         android:textColor="@color/logIn"
 
         android:textSize="50sp" />
+
     <EditText
         android:id="@+id/username"
         android:layout_width="match_parent"
@@ -28,7 +29,8 @@
         android:background="@drawable/round_border"
         android:drawableLeft="@drawable/ic_baseline_person_24"
         android:hint="Username"
-        android:padding="20dp"/>
+        android:padding="20dp"
+        android:textColor="#F4F4F4" />
 
     <EditText
         android:id="@+id/password"
@@ -46,13 +48,13 @@
         android:id="@+id/repassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:drawableLeft="@drawable/ic_baseline_lock_24"
         android:layout_marginTop="30dp"
         android:background="@drawable/round_border"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
         android:hint="Re-enterPassword"
-        android:padding="20dp"
         android:inputType="textPassword"
-        />
+        android:padding="20dp"
+        android:textColor="#FDFDFD" />
 
     <Button
         android:id="@+id/btnsignup"

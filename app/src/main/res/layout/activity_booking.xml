@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-
+android:background="@drawable/a9"
     android:padding="10dp"
     tools:context=".Booking">
 
@@ -17,4 +17,47 @@
         android:textColor="#00BCD4"
         android:textSize="30sp"
         android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_border"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:hint="Username"
+        android:padding="20dp"
+        android:textColor="#FBFAFA"
+        android:textColorHint="#FAF8F8" />
+
+    <EditText
+        android:id="@+id/mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_border"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:hint="UserEmail"
+        android:inputType="textEmailAddress"
+
+        android:padding="20dp"
+
+        android:textColor="#F8F5F5"
+        android:textColorHint="#F8F7F7" />
+
+    <Button
+        android:id="@+id/book"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password2"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_border"
+        android:fontFamily="@font/bangers"
+        android:padding="10dp"
+
+        android:text="Confrm Booking"
+        android:textColor="#FAF7F8"
+        app:backgroundTint="#03A9F4" />
+
 </LinearLayout>

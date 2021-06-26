@@ -18,9 +18,9 @@ public class LogIn extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_in);
 
-        username = (EditText) findViewById(R.id.username1);
-        password = (EditText) findViewById(R.id.password1);
-        btnlogin = (Button) findViewById(R.id.btnsignin1);
+        username = (EditText) findViewById(R.id.user);
+        password = (EditText) findViewById(R.id.password2);
+        btnlogin = (Button) findViewById(R.id.book);
         DB = new DBHelper(this);
 
         btnlogin.setOnClickListener(new View.OnClickListener() {
@@ -31,15 +31,15 @@ public class LogIn extends AppCompatActivity {
                 String pass = password.getText().toString();
 
                 if(user.equals("")||pass.equals(""))
-                    Toast.makeText(LogIn.this, "Please enter all the fields", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LogIn.this, "Please enter all the fields", Toast.LENGTH_LONG).show();
                 else{
                     Boolean checkuserpass = DB.checkusernamepassword(user, pass);
                     if(checkuserpass==true){
-                        Toast.makeText(LogIn.this, "Sign in successfull", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LogIn.this, "Sign in successfull", Toast.LENGTH_LONG).show();
                         Intent intent  = new Intent(getApplicationContext(), Search.class);
                         startActivity(intent);
                     }else{
-                        Toast.makeText(LogIn.this, "Invalid Credentials", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LogIn.this, "Invalid Credentials", Toast.LENGTH_LONG).show();
                     }
                 }
             }

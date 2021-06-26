@@ -64,6 +64,7 @@
 
             android:layout_width="309dp"
             android:layout_height="55dp"
+            android:layout_marginTop="12dp"
             android:background="@drawable/search"
             android:drawableLeft="@drawable/ic_baseline_search_24"
             android:ems="10"
@@ -72,8 +73,8 @@
             android:inputType="textPersonName"
             android:padding="16dp"
             android:paddingLeft="20dp"
-            android:textColorHint="@color/black"
 
+            android:textColorHint="@color/black"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="@+id/imageView2"
             app:layout_constraintHorizontal_bias="0.387"
@@ -114,8 +115,8 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/Recent_recycler"
-        android:layout_width="403dp"
-        android:layout_height="wrap_content"
+        android:layout_width="414dp"
+        android:layout_height="193dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/recent" />
@@ -126,6 +127,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/antic"
         android:text="Top Places"
         android:textColor="#0B0B0B"
@@ -138,30 +140,13 @@
         android:id="@+id/Top_places_Recycler"
         android:layout_width="410dp"
         android:layout_height="241dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="?actionBarSize"
-        android:layout_marginStart="4dp"
-        android:layout_marginLeft="4dp"
-        android:background="?attr/colorButtonNormal"
-        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@drawable/ic_baseline_home_24"></ImageView>
-    </LinearLayout>
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.119" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

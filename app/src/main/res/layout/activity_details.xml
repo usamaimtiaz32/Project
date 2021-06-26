@@ -129,7 +129,7 @@
         android:id="@+id/imageView9"
         android:layout_width="53dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="16dp"
         android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/textView9"
@@ -141,8 +141,8 @@
         android:layout_height="53dp"
         android:layout_marginStart="12dp"
         android:layout_marginLeft="12dp"
-android:onClick="Booking"
         android:fontFamily="@font/rubik"
+        android:onClick="Booking"
         android:text="Book Your Room"
         android:textSize="18sp"
         app:backgroundTint="#03A9F4"
@@ -151,6 +151,7 @@ android:onClick="Booking"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageView9"
         app:layout_constraintTop_toTopOf="@+id/imageView9"
+        app:layout_constraintVertical_bias="0.0"
         app:strokeColor="#040303" />
 
     <TextView
@@ -172,10 +173,12 @@ android:onClick="Booking"
         android:layout_height="69dp"
         android:text="You do not need to leave your room. Remain sitting at your table and listen. Do not even listen, simply wait, be quiet still and solitary. The world will freely offer itself to you to be unmasked, it has no choice."
         android:textColor="#0B0A0A"
+        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView8"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button2"
